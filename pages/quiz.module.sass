@@ -1,0 +1,44 @@
+$quiz-border: 1px solid #e0e0e0
+
+.quiz
+  margin: 12px 0
+  border: $quiz-border
+  border-radius: 8px
+
+.question
+  padding: 16px
+  font-weight: bold
+  line-height: 1.5
+  background-color: #e0e0e0
+  border-bottom: $quiz-border
+
+.answer summary
+  padding: 12px
+  border-top: $quiz-border
+  cursor: pointer
+
+  &:focus
+    outline: 0
+
+  &[open]
+    background-color: red
+
+.answer_text
+  padding: 0px 16px 16px
+
+.answer_wrong[open] summary,
+.answer_wrong[open] .answer_text
+  background-color: #fef9f9
+
+  .answer_cta_text
+    margin-top: 8px
+    color: #d32f2f
+
+.answer_correct[open] summary,
+.answer_correct[open] .answer_text
+  background-color: #f8fbf9
+
+  .answer_cta_text
+    margin-top: 8px
+    color: #d32f2f
+
